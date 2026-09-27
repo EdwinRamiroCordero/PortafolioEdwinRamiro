@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Égida Seguros: seguros de vida, salud, vehículo, hogar y empresa. Cotiza en línea y recibe asesoría por WhatsApp." />
+  <meta name="theme-color" content="#030712" />
+  <title>Égida Seguros | Protección inteligente</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 5 7v8c0 7 5 12 11 14 6-2 11-7 11-14V7z' fill='%2322d3ee'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-k8Kdx0mh.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BjCVWErC.css">
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <a class="skip" href="#cotizar">Ir a cotizar</a>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="Égida Seguros, inicio">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 5 7v8c0 7 5 12 11 14 6-2 11-7 11-14V7z" /></svg>ÉGIDA
+    </a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#coberturas">Coberturas</a></li>
+        <li><a href="#cotizar">Cotizar</a></li>
+        <li><a href="#siniestros">Siniestros</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-line" data-wa="Hola Égida, quiero hablar con un asesor de seguros." href="#cotizar">Asesor 24/7</a>
+  </header>
+
+  <main>
+    <section class="hero panel" id="top">
+      <p class="kicker" data-split>Seguros · Ecuador</p>
+      <h1 class="mega" data-split>PROTEGE<br />LO QUE<br />IMPORTA</h1>
+      <div class="hero-foot">
+        <p class="lead">Seguros de vida, salud, vehículo, hogar y empresa con respaldo de aseguradoras líderes. Cotiza en 60 segundos, sin llamadas incómodas.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#cotizar">Cotizar ahora</a>
+          <a class="btn btn-line" href="#coberturas">Explorar coberturas</a>
+        </div>
+      </div>
+      <div class="hud" aria-hidden="true">
+        <span>STATUS <b>PROTEGIDO</b></span><span>COBERTURA <b id="hudCov">360°</b></span><span>RESPUESTA <b>&lt; 15 MIN</b></span>
+      </div>
+    </section>
+
+    <section class="panel statement">
+      <h2 class="big-line" data-reveal>Un escudo invisible<br /><span class="dim">para tu familia, tu patrimonio<br />y tu empresa.</span></h2>
+    </section>
+
+    <section class="panel types" id="coberturas" aria-labelledby="covTitle">
+      <div class="wrap">
+        <p class="kicker">Coberturas</p>
+        <h2 id="covTitle" class="h2">Elige tu escudo.</h2>
+        <div class="tabs" role="tablist" aria-label="Tipos de seguro" id="tabs"></div>
+        <article class="tab-panel" id="tabPanel" role="tabpanel" aria-live="polite">
+          <div class="tp-left">
+            <h3 id="tpTitle"></h3>
+            <p id="tpDesc"></p>
+            <ul id="tpList" class="checks"></ul>
+          </div>
+          <div class="tp-right">
+            <span class="from">Desde</span>
+            <strong id="tpPrice"></strong>
+            <span class="from">al mes · referencial</span>
+            <a class="btn btn-solid" id="tpWa" href="#cotizar">Cotizar este seguro</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel quote" id="cotizar" aria-labelledby="quoteTitle">
+      <div class="wrap quote-grid">
+        <div>
+          <p class="kicker">Cotizador</p>
+          <h2 id="quoteTitle" class="h2">Arma tu plan<br />a medida.</h2>
+          <p class="lead">Selecciona las coberturas y ajusta tus datos. El valor es una estimación; un asesor certificado te confirma la prima final por WhatsApp.</p>
+        </div>
+        <form class="glass" id="quoteForm" novalidate>
+          <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <fieldset>
+            <legend>Coberturas</legend>
+            <div class="chips" id="chips"></div>
+          </fieldset>
+          <label>Edad del titular <b id="ageOut">30</b><input type="range" name="edad" min="18" max="75" value="30" /></label>
+          <label>Personas a cubrir <b id="peopleOut">1</b><input type="range" name="personas" min="1" max="6" value="1" /></label>
+          <label>Nombre<input name="nombre" maxlength="60" autocomplete="name" placeholder="Tu nombre" /></label>
+          <div class="total">
+            <span>Prima estimada</span>
+            <strong id="total">$0</strong>
+            <small>mensual · incluye asistencia 24/7</small>
+          </div>
+          <p class="err" id="qErr" role="alert"></p>
+          <button class="btn btn-solid btn-block" type="submit">Enviar cotización por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="panel claims" id="siniestros" aria-labelledby="clTitle">
+      <div class="wrap">
+        <p class="kicker">Siniestros</p>
+        <h2 id="clTitle" class="h2">Si pasa algo,<br />estamos en minutos.</h2>
+        <ol class="claim-steps">
+          <li><span>01</span><h3>Reporta</h3><p>Escríbenos por WhatsApp con una foto y tu ubicación. Sin formularios eternos.</p></li>
+          <li><span>02</span><h3>Te guiamos</h3><p>Un gestor asignado coordina grúa, taller, clínica o perito según tu caso.</p></li>
+          <li><span>03</span><h3>Resolvemos</h3><p>Seguimiento en tiempo real hasta la indemnización o reparación final.</p></li>
+        </ol>
+        <a class="btn btn-danger" data-wa="EMERGENCIA Égida: necesito reportar un siniestro." href="#siniestros">Reportar un siniestro ahora</a>
+      </div>
+    </section>
+
+    <section class="panel numbers" aria-label="Cifras">
+      <div class="wrap nums">
+        <div><strong data-n="25000">0</strong><span>asegurados activos</span></div>
+        <div><strong data-n="9">0</strong><span>aseguradoras aliadas</span></div>
+        <div><strong data-n="15">0</strong><span>minutos de respuesta</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Égida Seguros · Marca ficticia, proyecto demostrativo de portafolio.</p>
+    <p>Desarrollado por <a href="../../">Edwin Ramiro Cordero Navarrete</a> · Three.js + GSAP</p>
+  </footer>
+
+  <a class="wa-float" data-wa="Hola Égida, quiero información sobre seguros." href="#cotizar" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.3 23.7l6.2-1.6A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.5-8.5ZM12 21.6a9.7 9.7 0 0 1-5-1.4l-.3-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 1 1 12 21.6Zm5.3-7.3c-.3-.1-1.7-.9-2-1s-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3Z"/></svg>
+  </a>
+</body>
+</html>

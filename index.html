@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Portafolio de Edwin Ramiro Cordero Navarrete: Ingeniero en TI, desarrollador full-stack e investigador en IA aplicada. Sitios web, SaaS, visión por computador y tecnología educativa." />
+  <meta property="og:title" content="Edwin Ramiro Cordero Navarrete · Portafolio" />
+  <meta property="og:description" content="Desarrollo web moderno, IA aplicada y productos SaaS." />
+  <meta name="theme-color" content="#050507" />
+  <title>Edwin Ramiro Cordero Navarrete · Portafolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050507'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='700' text-anchor='middle' fill='%23b8ff3c'%3EEC%3C/text%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-DBkutNY8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BRjZYiBw.css">
+</head>
+<body>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <a class="skip" href="#sitios">Ir a los sitios web</a>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="Inicio"><span>EC</span>edwin.cordero</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#sitios">Sitios web</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-acc btn-sm" id="navWa" href="#contacto">Hablemos</a>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <p class="mono hero-k"><span class="dot"></span> Disponible para nuevos proyectos · Ecuador</p>
+      <h1 class="hero-name">
+        <span class="row"><span>Edwin Ramiro</span></span>
+        <span class="row"><span class="stroke">Cordero</span></span>
+        <span class="row"><span>Navarrete<i class="acc">.</i></span></span>
+      </h1>
+      <p class="hero-role mono">&gt; <span id="typed"></span><span class="caret">_</span></p>
+      <div class="hero-foot">
+        <p class="hero-sub">Construyo productos digitales de punta a punta: sitios web que venden, plataformas SaaS y sistemas de inteligencia artificial que leen, entienden y automatizan.</p>
+        <div class="hero-cta">
+          <a class="btn btn-acc" href="#sitios">Ver los 5 sitios web</a>
+          <a class="btn btn-line" id="ghLink" href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="scroll-cue mono" aria-hidden="true">SCROLL</div>
+    </section>
+
+    <section class="about" aria-label="Sobre mí">
+      <p class="about-text" id="about">Soy estudiante de Ingeniería en Tecnologías de la Información en la UTN. Investigo modelos de visión y lenguaje para mi tesis, fundé Phanzly y aporto tecnología a la educación con Progracademy y Fe y Alegría. Me gusta llevar ideas complejas a productos simples, rápidos y seguros.</p>
+      <div class="kpis">
+        <div><strong data-n="5">0</strong><span>sitios web con 5 tecnologías distintas</span></div>
+        <div><strong data-n="6">0</strong><span>redes integradas en Phanzly</span></div>
+        <div><strong data-n="30">0</strong><span>dispositivos en pruebas de estrés</span></div>
+        <div><strong data-n="4">0</strong><span>métricas de evaluación en la tesis</span></div>
+      </div>
+    </section>
+
+    <section class="sitios" id="sitios" aria-labelledby="sitiosT">
+      <div class="wrap">
+        <p class="mono k">01 / Sitios web</p>
+        <h2 id="sitiosT" class="h2">Cinco negocios.<br /><span class="dim">Cinco formas de construir la web.</span></h2>
+        <p class="lead">Para un grupo con divisiones de bienes raíces, préstamos, seguros, impuestos y remodelación, desarrollé un sitio por negocio, cada uno con una técnica diferente para demostrar versatilidad. Todos incluyen contacto directo por WhatsApp, formularios validados y políticas de seguridad de contenido (CSP).</p>
+        <div class="sites" id="sites"></div>
+      </div>
+    </section>
+
+    <section class="proyectos" id="proyectos" aria-labelledby="proyT">
+      <div class="wrap">
+        <p class="mono k">02 / Proyectos</p>
+        <h2 id="proyT" class="h2">Lo que he<br /><span class="dim">construido.</span></h2>
+      </div>
+      <div class="stack-cards" id="cards"></div>
+      <div class="wrap">
+        <h3 class="mono k small">También</h3>
+        <ul class="others" id="others"></ul>
+      </div>
+    </section>
+
+    <section class="stack" id="stack" aria-labelledby="stackT">
+      <div class="wrap">
+        <p class="mono k">03 / Stack</p>
+        <h2 id="stackT" class="h2">Herramientas<br /><span class="dim">de trabajo.</span></h2>
+      </div>
+      <div class="marquee" aria-hidden="true"><div class="mq" id="mq1"></div></div>
+      <div class="marquee rev" aria-hidden="true"><div class="mq" id="mq2"></div></div>
+      <ul class="sr-list" id="stackList"></ul>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contT">
+      <div class="wrap">
+        <p class="mono k">04 / Contacto</p>
+        <h2 id="contT" class="mega-cta">¿Construimos<br />algo <span class="acc">juntos?</span></h2>
+        <div class="contact-row">
+          <a class="btn btn-acc btn-lg" id="waBig" href="#contacto">Escríbeme por WhatsApp · 096 091 3089</a>
+          <a class="btn btn-line btn-lg" id="ghBig" href="#">github.com/EdwinRamiroCordero</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <p>© <span id="year"></span> Edwin Ramiro Cordero Navarrete</p>
+    <p>Hecho a mano con Vite, GSAP y Canvas · Sin rastreadores</p>
+  </footer>
+</body>
+</html>

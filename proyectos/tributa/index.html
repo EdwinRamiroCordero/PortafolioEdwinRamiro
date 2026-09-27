@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Tributa: declaraciones, contabilidad y asesoría tributaria para personas, emprendedores y pymes en Ecuador." />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Tributa | Impuestos sin estrés</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23039855'/%3E%3Cpath d='M10 17l4 4 8-10' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <script type="module" crossorigin src="./assets/index-VprFLQy5.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-B6u3a8q0.css">
+</head>
+<body class="bg-white text-ink font-sans antialiased overflow-x-hidden">
+  <a href="#calendario" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 bg-ink text-white px-4 py-2 rounded-lg">Ir al calendario</a>
+
+  <!-- NAV -->
+  <header x-data="nav" class="fixed inset-x-0 top-0 z-40 transition-all duration-500" :class="navClass">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-2 text-lg font-bold tracking-tight" aria-label="Tributa, inicio">
+        <span class="grid h-8 w-8 place-items-center rounded-[10px] bg-leaf-600 text-white">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </span>Tributa
+      </a>
+      <nav aria-label="Principal" class="hidden md:block">
+        <ul class="flex gap-8 text-sm text-mute">
+          <li><a class="hover:text-ink" href="#servicios">Servicios</a></li>
+          <li><a class="hover:text-ink" href="#calendario">Calendario SRI</a></li>
+          <li><a class="hover:text-ink" href="#planes">Planes</a></li>
+          <li><a class="hover:text-ink" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="#contacto" class="rounded-full bg-ink px-4 py-2 text-sm font-semibold text-white transition hover:bg-leaf-600">Consulta gratis</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="top" class="relative overflow-hidden bg-sand pt-36 pb-24 text-center">
+      <div class="mx-auto max-w-5xl px-4">
+        <p class="fade-up mb-4 text-sm font-semibold text-leaf-600">Contadores y asesores tributarios · Guayaquil</p>
+        <h1 class="fade-up text-[clamp(3rem,10vw,8rem)] font-bold leading-[0.92] tracking-tightest">Impuestos.<br /><span class="text-gradient">Sin estrés.</span></h1>
+        <p class="fade-up mx-auto mt-6 max-w-xl text-lg text-mute md:text-xl">Declaramos, llevamos tu contabilidad y te avisamos antes de cada vencimiento. Tú te dedicas a tu negocio.</p>
+        <div class="fade-up mt-8 flex flex-wrap justify-center gap-3">
+          <a href="#calendario" class="rounded-full bg-leaf-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-leaf-600/30 transition hover:-translate-y-0.5 hover:bg-leaf-700">Ver mi fecha de declaración</a>
+          <a href="#planes" class="rounded-full px-7 py-3.5 font-semibold text-leaf-700 transition hover:bg-leaf-50">Ver planes ›</a>
+        </div>
+      </div>
+
+      <!-- Tarjetas flotantes del hero -->
+      <div class="hero-stage relative mx-auto mt-16 h-[360px] max-w-5xl px-4" aria-hidden="true">
+        <div class="hero-card left-[4%] top-10 rotate-[-8deg]">
+          <p class="text-xs font-semibold uppercase tracking-widest text-mute">Formulario 104</p>
+          <p class="mt-2 text-3xl font-bold">IVA</p>
+          <div class="mt-4 h-2 w-full rounded-full bg-leaf-100"><div class="bar h-2 rounded-full bg-leaf-500"></div></div>
+          <p class="mt-3 text-sm text-leaf-700">✓ Presentado a tiempo</p>
+        </div>
+        <div class="hero-card left-1/2 top-0 z-10 w-72 -translate-x-1/2 md:w-80">
+          <p class="text-xs font-semibold uppercase tracking-widest text-mute">Próximo vencimiento</p>
+          <p class="mt-2 text-6xl font-bold tracking-tightest">16</p>
+          <p class="text-mute">del mes · noveno dígito 4</p>
+          <div class="mt-5 grid grid-cols-7 gap-1 text-[11px] text-mute">
+            <span class="cal-d">L</span><span class="cal-d">M</span><span class="cal-d">M</span><span class="cal-d">J</span><span class="cal-d">V</span><span class="cal-d">S</span><span class="cal-d">D</span>
+            <span class="cal">10</span><span class="cal">11</span><span class="cal">12</span><span class="cal">13</span><span class="cal">14</span><span class="cal">15</span><span class="cal on">16</span>
+          </div>
+        </div>
+        <div class="hero-card right-[4%] top-14 rotate-[7deg]">
+          <p class="text-xs font-semibold uppercase tracking-widest text-mute">Impuesto a la Renta</p>
+          <p class="mt-2 text-3xl font-bold">Anual</p>
+          <p class="mt-3 text-sm text-mute">Anexo de gastos personales listo</p>
+          <p class="mt-2 text-sm font-semibold text-leaf-700">Devolución estimada ↑</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT (scroll-driven) -->
+    <section class="mx-auto max-w-5xl px-4 py-32 md:py-48">
+      <p class="reveal-words text-[clamp(1.8rem,4.6vw,3.6rem)] font-semibold leading-tight tracking-tight">
+        <span>Más</span> <span>de</span> <span>1.200</span> <span>contribuyentes</span> <span>confían</span> <span>en</span> <span>nosotros</span> <span>para</span> <span>cumplir</span> <span>con</span> <span>el</span> <span>SRI</span> <span class="text-leaf-600">sin</span> <span class="text-leaf-600">multas,</span> <span class="text-leaf-600">sin</span> <span class="text-leaf-600">intereses</span> <span class="text-leaf-600">y</span> <span class="text-leaf-600">sin</span> <span class="text-leaf-600">sustos.</span>
+      </p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="bg-sand py-24 md:py-32">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="scroll-in text-[clamp(2.4rem,6vw,4.6rem)] font-bold leading-none tracking-tightest">Todo lo tributario.<br /><span class="text-mute">En un solo lugar.</span></h2>
+        <div class="mt-14 grid gap-4 md:grid-cols-3">
+          <article class="svc md:col-span-2 bg-ink text-white">
+            <p class="svc-k text-leaf-500">Mensual</p>
+            <h3 class="svc-t">Declaraciones de IVA y retenciones</h3>
+            <p class="svc-p text-white/70">Formularios 103 y 104, ATS y anexos. Revisamos tus facturas electrónicas y detectamos crédito tributario que estás dejando pasar.</p>
+          </article>
+          <article class="svc bg-white">
+            <p class="svc-k text-leaf-600">Anual</p>
+            <h3 class="svc-t">Impuesto a la Renta</h3>
+            <p class="svc-p text-mute">Personas naturales y sociedades, con proyección de gastos personales.</p>
+          </article>
+          <article class="svc bg-white">
+            <p class="svc-k text-leaf-600">Emprendedores</p>
+            <h3 class="svc-t">Régimen RIMPE</h3>
+            <p class="svc-p text-mute">Inscripción, actualización de RUC y declaraciones semestrales.</p>
+          </article>
+          <article class="svc bg-white">
+            <p class="svc-k text-leaf-600">Pymes</p>
+            <h3 class="svc-t">Contabilidad completa</h3>
+            <p class="svc-p text-mute">Estados financieros, nómina, IESS y reportes para la Superintendencia.</p>
+          </article>
+          <article class="svc bg-leaf-600 text-white">
+            <p class="svc-k text-leaf-100">Devoluciones</p>
+            <h3 class="svc-t">Recupera tu dinero</h3>
+            <p class="svc-p text-white/80">Devolución de IVA a adultos mayores y personas con discapacidad, y saldos a favor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDARIO SRI -->
+    <section id="calendario" class="py-24 md:py-32" x-data="calendario">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 md:grid-cols-2">
+        <div class="scroll-in">
+          <p class="mb-3 text-sm font-semibold text-leaf-600">Herramienta gratuita</p>
+          <h2 class="text-[clamp(2.4rem,5.5vw,4.2rem)] font-bold leading-none tracking-tightest">¿Cuándo declaro?</h2>
+          <p class="mt-5 text-lg text-mute">Ingresa tu RUC o cédula. Según el noveno dígito, te decimos tu fecha máxima de declaración mensual y cuántos días te quedan.</p>
+          <p class="mt-4 text-sm text-mute">🔒 El cálculo se hace en tu navegador. No guardamos ni enviamos tu número.</p>
+        </div>
+        <div class="scroll-in rounded-[32px] bg-sand p-6 md:p-10">
+          <label for="ruc" class="text-sm font-semibold text-mute">RUC o cédula</label>
+          <input id="ruc" x-model="ruc" @input="clean" inputmode="numeric" autocomplete="off" maxlength="13" placeholder="0912345678001"
+            class="mt-2 w-full rounded-2xl border border-black/10 bg-white px-5 py-4 text-2xl font-semibold tracking-wider outline-none transition focus:border-leaf-500 focus:ring-4 focus:ring-leaf-100" />
+          <p class="mt-2 min-h-[1.25rem] text-sm text-red-600" x-text="error" role="alert"></p>
+          <div class="mt-4 rounded-3xl bg-white p-6 text-center shadow-sm" x-show="valido" x-transition.opacity.duration.400ms>
+            <p class="text-sm text-mute">Noveno dígito <b class="text-ink" x-text="digito"></b> · vence el día</p>
+            <p class="text-[5.5rem] font-bold leading-none tracking-tightest text-leaf-600" x-text="dia"></p>
+            <p class="font-semibold" x-text="mensaje"></p>
+            <div class="mt-4 h-2 rounded-full bg-leaf-100"><div class="h-2 rounded-full bg-leaf-500 transition-all duration-700" :style="barStyle"></div></div>
+          </div>
+          <div class="mt-6 grid grid-cols-5 gap-2 text-center text-xs">
+            <template x-for="f in tabla" :key="f.d">
+              <div class="rounded-xl py-2 transition" :class="f.clase">
+                <b class="block text-base" x-text="f.dia"></b><span x-text="f.label"></span>
+              </div>
+            </template>
+          </div>
+          <p class="mt-4 text-xs text-mute">Referencial para obligaciones mensuales. Si la fecha cae en feriado o fin de semana, se traslada al siguiente día hábil.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section class="bg-ink py-24 text-white md:py-32" x-data="checklist">
+      <div class="mx-auto max-w-4xl px-4">
+        <h2 class="scroll-in text-[clamp(2.2rem,5vw,4rem)] font-bold leading-none tracking-tightest">Tu checklist para la<br /><span class="text-leaf-500">declaración de Renta.</span></h2>
+        <div class="mt-10 flex items-center gap-4">
+          <div class="h-2 flex-1 rounded-full bg-white/10"><div class="h-2 rounded-full bg-leaf-500 transition-all duration-500" :style="progressStyle"></div></div>
+          <span class="text-sm font-semibold" x-text="progressLabel"></span>
+        </div>
+        <ul class="mt-8 grid gap-3">
+          <template x-for="item in items" :key="item.id">
+            <li>
+              <button type="button" @click="toggle(item.id)" :aria-pressed="item.done" class="flex w-full items-center gap-4 rounded-2xl border border-white/10 px-5 py-4 text-left transition hover:border-leaf-500">
+                <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full border-2 transition" :class="item.done ? 'border-leaf-500 bg-leaf-500 text-ink' : 'border-white/30'">✓</span>
+                <span :class="item.done ? 'text-white/40 line-through' : ''" x-text="item.t"></span>
+              </button>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section id="planes" class="py-24 md:py-32" x-data="planes">
+      <div class="mx-auto max-w-6xl px-4 text-center">
+        <h2 class="scroll-in text-[clamp(2.4rem,6vw,4.6rem)] font-bold leading-none tracking-tightest">Elige tu plan.</h2>
+        <div class="mt-8 inline-flex rounded-full bg-sand p-1 text-sm font-semibold" role="group" aria-label="Periodo de pago">
+          <button type="button" @click="setMensual" class="rounded-full px-5 py-2 transition" :class="anual ? 'text-mute' : 'bg-white shadow'">Mensual</button>
+          <button type="button" @click="setAnual" class="rounded-full px-5 py-2 transition" :class="anual ? 'bg-white shadow' : 'text-mute'">Anual <span class="text-leaf-600">-15%</span></button>
+        </div>
+        <div class="mt-12 grid gap-4 text-left md:grid-cols-3">
+          <template x-for="p in lista" :key="p.n">
+            <article class="flex flex-col rounded-[28px] p-8 transition hover:-translate-y-1" :class="p.dest ? 'bg-ink text-white shadow-2xl' : 'bg-sand'">
+              <p class="text-sm font-semibold" :class="p.dest ? 'text-leaf-500' : 'text-leaf-600'" x-text="p.tag"></p>
+              <h3 class="mt-2 text-3xl font-bold tracking-tight" x-text="p.n"></h3>
+              <p class="mt-6"><span class="text-5xl font-bold tracking-tightest" x-text="p.precio"></span><span class="opacity-60"> /mes</span></p>
+              <ul class="mt-6 grid flex-1 gap-2 text-sm opacity-80">
+                <template x-for="f in p.f" :key="f"><li x-text="f"></li></template>
+              </ul>
+              <a class="mt-8 rounded-full py-3 text-center font-semibold transition" :class="p.dest ? 'bg-leaf-500 text-ink hover:bg-leaf-100' : 'bg-ink text-white hover:bg-leaf-600'" :href="p.wa" target="_blank" rel="noopener noreferrer">Empezar</a>
+            </article>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="bg-sand py-24 md:py-32" x-data="contacto">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-2">
+        <div class="scroll-in">
+          <h2 class="text-[clamp(2.4rem,5.5vw,4.2rem)] font-bold leading-none tracking-tightest">Primera consulta<br /><span class="text-leaf-600">sin costo.</span></h2>
+          <p class="mt-5 text-lg text-mute">Cuéntanos tu caso y un asesor te responde por WhatsApp hoy mismo.</p>
+          <dl class="mt-8 grid gap-3 text-sm">
+            <div><dt class="text-mute">Oficina</dt><dd class="font-semibold">Av. 9 de Octubre y Boyacá, Guayaquil</dd></div>
+            <div><dt class="text-mute">Horario</dt><dd class="font-semibold">Lunes a viernes, 08:30 a 18:00</dd></div>
+          </dl>
+        </div>
+        <form class="scroll-in grid gap-4 rounded-[32px] bg-white p-6 shadow-sm md:p-10" @submit.prevent="enviar" novalidate>
+          <input class="absolute -left-[9999px] h-px w-px" tabindex="-1" autocomplete="off" x-model="trampa" aria-hidden="true" />
+          <label class="grid gap-2 text-sm font-semibold text-mute">Nombre
+            <input x-model="nombre" maxlength="60" autocomplete="name" class="rounded-2xl border border-black/10 px-4 py-3 text-base font-normal text-ink outline-none focus:border-leaf-500 focus:ring-4 focus:ring-leaf-100" />
+          </label>
+          <label class="grid gap-2 text-sm font-semibold text-mute">Soy
+            <select x-model="perfil" class="rounded-2xl border border-black/10 px-4 py-3 text-base font-normal text-ink outline-none focus:border-leaf-500">
+              <option>Persona natural</option><option>Emprendedor RIMPE</option><option>Pyme / Sociedad</option>
+            </select>
+          </label>
+          <label class="grid gap-2 text-sm font-semibold text-mute">¿En qué te ayudamos?
+            <textarea x-model="mensaje" rows="4" maxlength="400" class="rounded-2xl border border-black/10 px-4 py-3 text-base font-normal text-ink outline-none focus:border-leaf-500 focus:ring-4 focus:ring-leaf-100"></textarea>
+          </label>
+          <p class="min-h-[1.25rem] text-sm text-red-600" role="alert" x-text="error"></p>
+          <button class="rounded-full bg-leaf-600 py-4 font-semibold text-white transition hover:bg-leaf-700">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black/5 py-10 text-center text-sm text-mute">
+    <p>© <span id="year"></span> Tributa · Marca ficticia, proyecto demostrativo de portafolio.</p>
+    <p class="mt-1">Desarrollado por <a class="font-semibold text-leaf-700" href="../../">Edwin Ramiro Cordero Navarrete</a> · Tailwind CSS + Alpine.js (CSP)</p>
+  </footer>
+
+  <a class="wa-float" id="waFloat" href="#contacto" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.7L.3 23.7l6.2-1.6A11.8 11.8 0 0 0 24 12a11.7 11.7 0 0 0-3.5-8.5ZM12 21.6a9.7 9.7 0 0 1-5-1.4l-.3-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 1 1 12 21.6Zm5.3-7.3c-.3-.1-1.7-.9-2-1s-.5-.1-.7.2l-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3Z"/></svg>
+  </a>
+</body>
+</html>
