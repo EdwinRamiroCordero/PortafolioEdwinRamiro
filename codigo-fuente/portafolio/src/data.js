@@ -3,7 +3,7 @@
 export const perfil = {
   nombre: 'Edwin Ramiro Cordero Navarrete',
   corto: 'Edwin Cordero',
-  roles: ['Ingeniero en Tecnologías de la Información', 'Desarrollador Full-Stack', 'IA aplicada y Visión por Computador', 'Fundador de Phanzly'],
+  roles: ['Ingeniero en Tecnologías de la Información · UTN', 'Desarrollador Full-Stack', 'IA aplicada y Visión por Computador', 'Fundador de Phanzly'],
   ubicacion: 'Quito · Guayaquil, Ecuador',
   github: 'https://github.com/EdwinRamiroCordero',
   whatsapp: 'Hola Edwin, vi tu portafolio y me gustaría conversar sobre un proyecto.',
@@ -46,7 +46,7 @@ export const sitios = [
 // Proyectos profesionales y académicos
 export const proyectos = [
   {
-    id: 'tesis', tag: 'Tesis de grado · Investigación', titulo: 'Extracción de texto en imágenes con Vision-Language Models',
+    id: 'tesis', tag: 'Tesis de ingeniería · UTN', titulo: 'Extracción de texto en imágenes con Vision-Language Models',
     resumen: 'Pipeline híbrido que combina OCR clásico con modelos de visión y lenguaje para leer documentos, facturas, carteles y escritura difícil con mayor precisión.',
     puntos: [
       'Arquitectura en cascada: EasyOCR → InternVL2-2B cuantizado (QLoRA / NF4) → Gemini como respaldo',

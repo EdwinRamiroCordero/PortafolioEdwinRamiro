@@ -6,7 +6,7 @@
 -->
 
 <h1 align="center">Hola, soy Edwin Ramiro Cordero Navarrete 👋</h1>
-<p align="center"><b>Ingeniero en TI · Full-Stack · IA aplicada y Visión por Computador · Fundador de Phanzly</b></p>
+<p align="center"><b>Ingeniero en Tecnologías de la Información (UTN) · Full-Stack · IA aplicada y Visión por Computador · Fundador de Phanzly</b></p>
 
 <p align="center">
   <a href="https://edwinramirocordero.github.io/PortafolioEdwinRamiro/"><img src="https://img.shields.io/badge/Portafolio-en%20vivo-b8ff3c?style=for-the-badge&labelColor=050507" alt="Portafolio" /></a>
@@ -17,6 +17,7 @@
 
 ### Qué hago
 
+- 🎓 **Ingeniero graduado** de la Universidad Técnica del Norte (Ecuador).
 - 🌐 **Desarrollo web moderno**: sitios con animaciones al estilo Apple / SpaceX, 3D con WebGL y foco en conversión.
 - 🧠 **IA aplicada**: mi tesis combina OCR y Vision-Language Models (InternVL2, Qwen2-VL, Gemini) para extraer texto de imágenes.
 - 🚀 **Producto SaaS**: fundé **Phanzly**, plataforma multi-tenant para gestionar redes sociales con IA.

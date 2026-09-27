@@ -2,7 +2,7 @@
 
 # Edwin Ramiro Cordero Navarrete
 
-**Ingeniero en Tecnologías de la Información · Desarrollador Full-Stack · IA aplicada**
+**Ingeniero en Tecnologías de la Información (Universidad Técnica del Norte) · Desarrollador Full-Stack · IA aplicada**
 
 [Ver portafolio en vivo](https://edwinramirocordero.github.io/PortafolioEdwinRamiro/) ·
 [WhatsApp](https://wa.me/593960913089) ·
@@ -41,7 +41,7 @@ Este repositorio contiene **mi portafolio personal** y **cinco sitios web profes
 
 ## Proyectos destacados
 
-### Tesis · Extracción de texto con Vision-Language Models
+### Tesis de ingeniería (UTN) · Extracción de texto con Vision-Language Models
 Pipeline en cascada **EasyOCR → InternVL2-2B (QLoRA / NF4) → Gemini** con arquitectura DDD (Ports & Adapters) y un protocolo de liberación de VRAM para GPUs modestas. Evaluado con **CER, WER, F1 y ANLS**. Presentado en la conferencia AENIT.
 `Python` `PyTorch` `InternVL2` `Qwen2-VL` `EasyOCR` `Gemini`
 
