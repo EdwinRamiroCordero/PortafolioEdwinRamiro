@@ -580,7 +580,7 @@ button.svc:hover{background:var(--surface-2)}
         <p class="eyebrow" style="color:var(--amber)" data-en="Estimated range">Rango estimado</p>
         <div class="range" id="e-range">$0</div>
         <div class="bar"><i id="e-bar"></i></div>
-        <div class="scale"><span>$1k</span><span>$50k</span><span>$100k+</span></div>
+        <div class="scale"><span>$0</span><span>$50k</span><span>$100k+</span></div>
         <small id="e-basis"></small>
         <button class="btn btn-primary" type="button" id="e-go" data-en="Request a free estimate">Solicitar estimado gratuito</button>
         <small data-en="Reference prices for the draft. They will be adjusted with the company's real prices.">Precios de referencia del boceto. Se ajustan con los precios reales de la empresa.</small>
@@ -881,7 +881,7 @@ function calc(){
   lo=Math.max(EST_MIN,Math.round(lo*f/500)*500); hi=Math.max(lo+500,Math.round(hi*f/500)*500); lastRange=[lo,hi];
   document.getElementById('e-range').textContent=`${money(lo)} - ${money(hi)}`;
   const max=100000, bar=document.getElementById('e-bar');
-  const pct=v=>Math.min(Math.max((v-EST_MIN)/(max-EST_MIN),0),1)*100; bar.style.left=pct(lo)+'%'; bar.style.width=Math.max(1.5,pct(hi)-pct(lo))+'%';
+  const pct=v=>Math.min(Math.max(v/max,0),1)*100; bar.style.left=pct(lo)+'%'; bar.style.width=Math.max(1.5,pct(hi)-pct(lo))+'%';
   document.getElementById('e-basis').textContent=T('Base del cálculo: ','Based on: ')+basis+' · '+T('acabado ','finish ')+document.querySelector('input[name=finish]:checked').parentElement.textContent.trim().toLowerCase();
 }
 eSvc.addEventListener('change',()=>{syncEstFields(true);calc()});
