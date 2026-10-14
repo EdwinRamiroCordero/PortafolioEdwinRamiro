@@ -378,6 +378,13 @@ button.svc:hover{background:var(--surface-2)}
 .side-dl dt{font:500 .7rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px}
 .side-dl dd{margin:0;font-size:.84rem;overflow-wrap:anywhere}
 .side-note{font-size:.82rem;color:var(--muted)}
+.m-contact{display:none}
+@media (max-width:1000px){
+  .m-contact{display:block;background:var(--surface);padding-block:16px}
+  .m-contact .side-card{box-shadow:none}
+  .pf-logo{margin-top:16px}
+  .pf-actions{display:none}
+}
 .side-soc{display:flex;gap:12px;flex-wrap:wrap;font-size:.9rem;font-weight:600}
 @media (max-width:1000px){.layout{grid-template-columns:1fr}.side{position:static;padding-top:0;order:-1;display:none}}
 .lb{position:fixed;inset:0;z-index:80;background:rgba(10,15,25,.92);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:8px;padding:16px}
@@ -416,11 +423,23 @@ button.svc:hover{background:var(--surface-2)}
   <span class="cv-note" data-en="Reference images">Imágenes de referencia</span>
 </section>
 
+<div class="wrap m-contact" aria-label="Contacto">
+  <div class="side-card">
+    <p class="eyebrow" data-en="Contact the pro">Contactar</p>
+    <a class="side-phone" href="tel:+12146359499">(214) 635-9499</a>
+    <a class="btn btn-primary" href="#solicitud" data-en="Request free estimate">Solicitar estimado gratuito</a>
+    <a class="btn btn-wa" href="https://wa.me/12146359499" target="_blank" rel="noopener" data-en="WhatsApp message">Mensaje por WhatsApp</a>
+    <a class="btn btn-sms" href="sms:+12146359499"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></svg><span data-en="Text message (SMS)">Mensaje de texto (SMS)</span></a>
+    <button class="btn btn-line" type="button" data-open-call data-en="Book a call">Reservar una llamada</button>
+    <p class="side-note" data-en="Mon-Sat 8 AM - 7 PM · Sun 8 AM - 2 PM">Lun-Sáb 8 AM - 7 PM · Dom 8 AM - 2 PM</p>
+  </div>
+</div>
+
 <header class="profile" id="inicio">
   <div class="wrap pf">
     <div class="pf-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136"><g transform="translate(18 16)"><path d="M6 48 L50 10 L50 22 L17 51 Z" fill="#FFFFFF"/><path d="M94 48 L50 10 L50 22 L83 51 Z" fill="#D97706"/><path d="M14 58 C28 54 42 56 48 62 V92 C42 86 28 84 14 88 Z" fill="#FFFFFF"/><path d="M86 58 C72 54 58 56 52 62 V92 C58 86 72 84 86 88 Z" fill="#D97706"/></g></svg></div>
     <div class="pf-main">
-      <h1>Construyendo Sueños Remodel</h1>
+      <h1 data-en="Building Dreams Remodel LLC">Construyendo Sueños Remodel LLC</h1>
       <p class="pf-sub"><span data-en="Home remodeling contractor">Contratista de remodelación residencial</span> · Dallas, TX · <span data-en="Serving all of DFW">Servicio en todo DFW</span></p>
       <p class="pf-tag" data-en="Transforming spaces, building dreams.">Transformando espacios, construyendo ideales.</p>
       <ul class="badges">
